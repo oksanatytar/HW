@@ -1,0 +1,33 @@
+    1  git config --global user.name "Oksana Tytar"
+    2  git config --global user.email "ksenia881@gmail.com"
+    3  git config --get user.name
+    4  git config --get user.email
+    5  git clone git@github.com:oksanatytar/HW_10.git
+    6  git clone https://github.com/oksanatytar/HW_10.git
+    7  ls -l
+    8  cd HW_10/
+    9  ls -l
+   10  git status
+   11  touch text_ignore.txt
+   12  nano .gitignore
+   13  ls -l
+   14  vim .gitignore
+   15  git status text_ignore.txt
+   16  git add .
+   17  git commit -m "Created a new file text_ignore.txt"
+   18  touch main_test.txt
+   19  git add .
+   20  git commit -m "Created a new file main_test.txt"
+   21  git checkout -b develop
+   22  git checkout develop
+   23  touch develop_test.txt
+   24  git add .
+   25  git commit -m "Created a new file develop_test.txt"
+   26  vim develop_test.txt 
+   27  git status develop_test.txt 
+   28  git add .
+   29  git commit -m "Updated the file develop_test.txt"
+   30  git checkout main
+   31  git merge develop
+   32  git log
+   33  history > command_list.csv
